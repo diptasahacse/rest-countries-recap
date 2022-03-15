@@ -11,10 +11,11 @@ const loadCountries = (countries) => {
 }
 const singleCountry = country => {
     console.log(country);
+    const { name, flags } = country;
     let data = `
     <div class="country">
-        <h3>${country.name}</h3>
-        <img src="${country.flags.png}">
+        <h3>${name}</h3>
+        <img src="${flags.png}">
     </div>
     `;
     return data;
