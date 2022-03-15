@@ -9,9 +9,7 @@ const loadCountries = (countries) => {
     document.getElementById('all-countries').innerHTML = countrisHTML.join(' ');
 
 }
-const singleCountry = country => {
-    console.log(country);
-    const { name, flags } = country;
+const singleCountry = ({ name, flags }) => {
     let data = `
     <div class="country">
         <h3>${name}</h3>
